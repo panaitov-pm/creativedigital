@@ -1340,6 +1340,12 @@ footer .social {
   }
 }
 
+@media screen and (max-width: 480px) {
+  footer .social__item:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
 .copyright {
   line-height: 32px;
 }
@@ -1405,6 +1411,12 @@ footer .social {
 @media screen and (max-width: 1350px) {
   .scroll-top__link {
     right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scroll-top__link {
+    bottom: 65px;
   }
 }
 

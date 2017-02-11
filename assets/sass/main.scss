@@ -1072,6 +1072,13 @@ footer {
 		@include max-width(sm) {
 			text-align: center;
 		}
+
+		&__item:not(:first-child) {
+
+			@include max-width(xxs) {
+				margin-left: 5px;
+			}
+		}
 	}
 }
 
@@ -1135,6 +1142,11 @@ footer {
         @include max-width(1350px) {
         	right: 0;
         }
+
+		@include max-width(xxs) {
+        	bottom: 65px;
+        }
+
       
         &:hover {
             box-shadow: 0 0 0 0 $main-text-color;
