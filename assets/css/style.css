@@ -1023,6 +1023,13 @@ header {
   background-color: #ebebeb;
 }
 
+@media screen and (max-width: 325px) {
+  .team-info__img-box {
+    width: 235px;
+    height: 235px;
+  }
+}
+
 .team-info__img {
   display: block;
   border-radius: 50%;
@@ -1034,12 +1041,25 @@ header {
   font-size: 24px;
 }
 
+@media screen and (max-width: 325px) {
+  .team-info__content {
+    padding-top: 132px;
+    padding-bottom: 29px;
+  }
+}
+
 .team-info__title {
   margin-bottom: 25px;
   color: #9f9acf;
   font-family: "Proxima nova", "PT Sans", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 325px) {
+  .team-info__title {
+    font-size: 22px;
+  }
 }
 
 .team-info__position {
@@ -1069,6 +1089,12 @@ header {
 
 .social__item:not(:first-child) {
   margin-left: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .social__item:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .social__link {
@@ -1337,12 +1363,6 @@ footer .social {
 @media screen and (max-width: 768px) {
   footer .social {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  footer .social__item:not(:first-child) {
-    margin-left: 5px;
   }
 }
 

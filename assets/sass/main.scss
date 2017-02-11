@@ -773,6 +773,11 @@ header {
 		height: 257px;
 		border-radius: 50%;
 		background-color: $section-bg;
+		
+		@include max-width(325px) {
+			width: 235px;
+			height: 235px;
+		}
 	}
 
 	&__img {
@@ -784,6 +789,11 @@ header {
 		padding: 157px 30px 46px;
 		background-color: $white-color;
 		font-size: 24px;
+		
+		@include max-width(325px) {
+			padding-top: 132px;
+			padding-bottom: 29px;
+		}
 	}
 
 	&__title {
@@ -792,6 +802,10 @@ header {
 		font-family: $second-font;
 		font-weight: 700;
 		text-transform: uppercase;
+		
+		@include max-width(325px) {
+			font-size: 22px;
+		}
 	}
 
 	&__position {
@@ -823,6 +837,10 @@ header {
 		
 		&:not(:first-child) {
 			margin-left: 25px;
+			
+			@include max-width(xxs) {
+				margin-left: 10px;
+			}
 		}
 	}
 
@@ -1071,13 +1089,6 @@ footer {
 		
 		@include max-width(sm) {
 			text-align: center;
-		}
-
-		&__item:not(:first-child) {
-
-			@include max-width(xxs) {
-				margin-left: 5px;
-			}
 		}
 	}
 }
