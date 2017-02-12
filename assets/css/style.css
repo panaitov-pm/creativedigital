@@ -241,6 +241,7 @@ select:-webkit-autofill:focus {
   color: #7d7a7c;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:not(:active):hover {
