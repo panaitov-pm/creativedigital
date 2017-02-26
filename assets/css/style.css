@@ -1177,6 +1177,7 @@ header {
   text-align: center;
   background-color: rgba(159, 154, 207, 0.5);
   z-index: 1;
+  pointer-event: none;
 }
 
 .contact-form {
